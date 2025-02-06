@@ -12,7 +12,7 @@ const MainLayout = () => {
             <div className="flex-grow mt-10">
             <Outlet></Outlet>
             </div>
-            <div className='border h-20'>
+            <div className=''>
             <Footer></Footer>
             </div>
         </div>
