@@ -2,7 +2,7 @@ import React from "react";
 import image from "../../../assets/image.png";
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-gray-900/75 px-12 text-gray-300">
+    <section id="about" className="py-16  px-12 text-gray-300">
         
       <div className="max-w-[1320px] mx-auto  flex flex-col md:flex-row items-center gap-10">
         
