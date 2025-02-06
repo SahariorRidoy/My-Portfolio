@@ -8,8 +8,10 @@ import Contact from '../Contact/Contact';
 
 const Home = () => {
     return (
-        <div>
+        <div className='max-w-[1320px] mx-auto'>
+            <div >
             <Banner></Banner>
+            </div>
             <About></About>
             <Skills></Skills>
             <Education></Education>
