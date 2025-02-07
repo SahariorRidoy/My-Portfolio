@@ -1,8 +1,9 @@
 import React from "react";
 
-import image from '../../assets/image.png'
+import image from "../../assets/image.png";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -27,46 +28,44 @@ const Banner = () => {
           </h1>
 
           <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
-            Passionate about building beautiful, user-friendly web applications. I specialize in React, Tailwind-CSS, and modern UI/UX based development.
+            Passionate about building beautiful, user-friendly web applications.
+            I specialize in React, Tailwind-CSS, and modern UI/UX based
+            development.
           </p>
-          
 
-          <div className="mt-8 flex flex-wrap gap-4 text-center">
-            <a
-              href="#"
-              className="block w-full rounded-sm bg-success px-12 py-3 text-sm font-medium text-white shadow-sm opacity-90 hover:opacity-100 focus:ring-3 focus:outline-hidden sm:w-auto"
-            >
-             Download Resume
-            </a>
+          <div className="mt-8 flex flex-wrap gap-6 text-center ">
+            <Link className="block cursor-pointer w-full sm:w-auto bg-success hover:bg-success/80 text-white rounded-sm px-6 py-3 text-sm font-medium shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-success">
+              Download Resume
+            </Link>
 
-            <a
-              href="#"
-              className="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-gray-900 shadow-sm hover:bg-success hover:text-white focus:ring-3 focus:outline-hidden sm:w-auto"
+            <Link
+              to="contact"
+              className="block cursor-pointer w-full sm:w-auto bg-gray-600 hover:bg-gray-700/80 rounded-sm px-6 py-3 text-white text-sm font-medium shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
             >
-              Contact
-            </a>
+              Contact Me
+            </Link>
           </div>
+
           <div className="mt-6 ml-1 flex justify-center lg:justify-start gap-4">
-            <a href="#" className="text-3xl hover:text-success">
+            <a href="https://www.facebook.com/Saharior.Ridoy/" target="_blank" className="text-3xl hover:text-success">
               <FaFacebook />
             </a>
-            <a href="#" className="text-3xl hover:text-success">
+            <a href="https://github.com/SahariorRidoy" target="_blank" className="text-3xl hover:text-success">
               <FaGithub />
             </a>
-            <a href="#" className="text-3xl hover:text-success">
+            <a href="https://www.linkedin.com/in/md-saharior-ridoy/" target="_blank" className="text-3xl hover:text-success">
               <FaLinkedin />
             </a>
-           
           </div>
         </div>
 
         {/* Lottie animation container with fixed position */}
         <div className="md:absolute lg:top-10 lg:right-10 md:top-24 md:right-0 right-0 z-10">
           <img
-                      src={image}
-                      alt="Saharior Ridoy"
-                      className="w- h- rounded-full object-cover shadow-xl border-4 border-success"
-                    />
+            src={image}
+            alt="Saharior Ridoy"
+            className="w- h- rounded-full object-cover shadow-xl border-4 border-success"
+          />
         </div>
       </div>
     </section>

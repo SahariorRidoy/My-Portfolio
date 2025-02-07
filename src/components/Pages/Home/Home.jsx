@@ -8,7 +8,7 @@ import Contact from '../Contact/Contact';
 
 const Home = () => {
     return (
-        <div className='max-w-[1320px] mx-auto'>
+        <div id='home' className='max-w-[1320px] mx-auto'>
             <div >
             <Banner></Banner>
             </div>
