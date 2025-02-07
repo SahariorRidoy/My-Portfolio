@@ -1,9 +1,9 @@
 import React from "react";
-
 import image from "../../assets/image.png";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
@@ -17,7 +17,11 @@ const Banner = () => {
             <strong className="block font-extrabold text-success">
               <Typewriter
                 options={{
-                  strings: ["Frontend Developer.", "React Developer."],
+                  strings: [
+                    "Frontend Developer.",
+                    "React Developer.",
+                    "MERN Developer",
+                  ],
                   autoStart: true,
                   loop: true,
                   delay: 100,
@@ -39,6 +43,8 @@ const Banner = () => {
             </Link>
 
             <Link
+              smooth={true}
+              duration={1000}
               to="contact"
               className="block cursor-pointer w-full sm:w-auto bg-gray-600 hover:bg-gray-700/80 rounded-sm px-6 py-3 text-white text-sm font-medium shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
             >
@@ -47,26 +53,41 @@ const Banner = () => {
           </div>
 
           <div className="mt-6 ml-1 flex justify-center lg:justify-start gap-4">
-            <a href="https://www.facebook.com/Saharior.Ridoy/" target="_blank" className="text-3xl hover:text-success">
+            <a
+              href="https://www.facebook.com/Saharior.Ridoy/"
+              target="_blank"
+              className="text-3xl hover:text-success"
+            >
               <FaFacebook />
             </a>
-            <a href="https://github.com/SahariorRidoy" target="_blank" className="text-3xl hover:text-success">
+            <a
+              href="https://github.com/SahariorRidoy"
+              target="_blank"
+              className="text-3xl hover:text-success"
+            >
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/md-saharior-ridoy/" target="_blank" className="text-3xl hover:text-success">
+            <a
+              href="https://www.linkedin.com/in/md-saharior-ridoy/"
+              target="_blank"
+              className="text-3xl hover:text-success"
+            >
               <FaLinkedin />
             </a>
           </div>
         </div>
-
-        {/* Lottie animation container with fixed position */}
         <div className="md:absolute lg:top-10 lg:right-10 md:top-24 md:right-0 right-0 z-10">
-          <img
+          <motion.img
             src={image}
             alt="Saharior Ridoy"
-            className="w- h- rounded-full object-cover shadow-xl border-4 border-success"
+            className="rounded-full object-cover shadow-xl border-4 border-success"
+            initial={{ opacity: 0, scale: 0.8, rotate: 180 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            whileHover={{ scale: 1.1 }}
           />
         </div>
+        ; ;
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 left-0 right-0 z-50 w-full bg-base-100 shadow-md">
+    <div className="sticky opacity-95 top-0 left-0 right-0 z-50 w-full bg-base-100 shadow-md">
       <div className="max-w-[1320px] mx-auto navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -40,7 +40,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <a className="btn btn-ghost text-xl">Saharior Ridoy</a>
+          <Link to="home" className="btn btn-ghost text-success text-xl">Md. Saharior Ridoy</Link>
         </div>
 
         <div className="navbar-center hidden lg:flex">
