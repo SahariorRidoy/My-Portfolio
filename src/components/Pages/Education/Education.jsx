@@ -50,7 +50,7 @@ const Education = () => {
         </h2>
 
         {/* Timeline Structure */}
-        <div className="relative border-l-4 border-blue-500 pl-6">
+        <div className="relative border-l-4 border-green-500 pl-6">
           {educationData.map((edu, index) => (
             <div
               key={index}
@@ -59,13 +59,13 @@ const Education = () => {
               data-aos-delay={index * 300} // Delay increases per card
             >
               {/* Graduation Icon */}
-              <div className="absolute -left-10 top-1 bg-blue-500 p-3 rounded-full">
+              <div className="absolute -left-10 top-1 bg-green-500 p-3 rounded-full">
                 <FaGraduationCap className="text-white text-xl" />
               </div>
 
               {/* Education Card */}
               <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 border border-gray-700">
-                <h3 className="text-xl font-semibold text-blue-400">
+                <h3 className="text-xl font-semibold text-green-400">
                   {edu.degree}
                 </h3>
                 <p className="text-gray-400">{edu.institution}</p>
