@@ -22,7 +22,7 @@ const projects = [
     description: "An event management app for organizing and tracking marathons.",
     tech:  ["React", "JavaScript", "Tailwind CSS","Firebase","ExpressJs"," MongoDB"],
     feature:["Authentication","CRUD Operation","Searching-Sorting"],
-    link: "https://marathon-management-91e2f.web.app/",
+    link: "https://maration-management.netlify.app/",
     github: "https://github.com/SahariorRidoy/Marathon-Management-client",
     image: marathonImg, 
   },
