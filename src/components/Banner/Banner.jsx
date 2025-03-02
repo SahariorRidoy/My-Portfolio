@@ -38,9 +38,9 @@ const Banner = () => {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-6 text-center ">
-            <Link className="block cursor-pointer w-full sm:w-auto bg-success hover:bg-success/80 text-white rounded-sm px-6 py-3 text-sm font-medium shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-success">
+            <a href="/public/resume.pdf" download="Md: Saharior Ridoy Resume.pdf" target="blank" className="btn btn-success cursor-pointer w-full sm:w-auto bg-success hover:bg-success/80 text-white rounded-sm px-6 py-5 flex justify-center items-center text-sm font-medium shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none ">
               Download Resume
-            </Link>
+            </a>
 
             <Link
               smooth={true}
@@ -56,27 +56,27 @@ const Banner = () => {
             <a
               href="https://www.facebook.com/Saharior.Ridoy/"
               target="_blank"
-              className="text-3xl hover:text-success"
+              className="text-4xl hover:text-success"
             >
               <FaFacebook />
             </a>
             <a
               href="https://github.com/SahariorRidoy"
               target="_blank"
-              className="text-3xl hover:text-success"
+              className="text-4xl hover:text-success"
             >
               <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/md-saharior-ridoy/"
               target="_blank"
-              className="text-3xl hover:text-success"
+              className="text-4xl hover:text-success"
             >
               <FaLinkedin />
             </a>
           </div>
         </div>
-        <div className="md:absolute lg:top-10 lg:right-10 md:top-24 md:right-0 right-0 z-10">
+        <div className="mt-4 md:absolute lg:top-10 lg:right-10 md:top-24 md:right-0 right-0 z-10">
           <motion.img
             src={image}
             alt="Saharior Ridoy"
@@ -87,7 +87,7 @@ const Banner = () => {
             whileHover={{ scale: 1.1 }}
           />
         </div>
-        ; ;
+        
       </div>
     </section>
   );

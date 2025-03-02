@@ -13,7 +13,7 @@ const Footer = () => {
             <h2> Md. Saharior Ridoy</h2>
           </div>
 
-          {/* Navigation Links with Smooth Scroll */}
+         
           <div>
             <ul className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4">
               <li><Link to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link></li>

@@ -11,12 +11,10 @@ const Contact = () => {
     message: "",
   });
 
-  // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -31,17 +29,14 @@ const Contact = () => {
       return;
     }
 
-    // Show success alert
     Swal.fire({
       icon: "success",
       title: "Message Sent!",
       text: "I will get back to you soon.",
       showConfirmButton: false,
       timer: 1500,
-
     });
 
-    // Clear form
     setFormData({
       name: "",
       email: "",
@@ -50,14 +45,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="max-w-[1320px] mx-auto py-16">
+    <section id="contact" className="max-w-[1320px] mx-auto py-14 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
         {/* Left */}
-        <div className="flex justify-center">
+        <div className="flex justify-start">
           <Lottie
             animationData={animation}
             loop={true}
-            className="w-[300px] md:w-[400px] lg:w-[400px]"
+            className="w-[300px] md:w-[400px] lg:w-[400px] max-w-full"
           />
         </div>
 
@@ -102,13 +97,46 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className="w-full p-3 bg-green-500 text-white font-semibold rounded-lg cursor-pointer hover:bg-green-700 transition duration-300"
+              className="w-full p-3 bg-success text-white font-semibold rounded-lg cursor-pointer hover:bg-green-700 transition duration-300"
             >
               Send Message
             </button>
           </form>
         </div>
       </div>
+{/* 
+      <div className="text-center py-8 mt-12 rounded-lg ">
+        <h3 className="text-2xl font-semibold text-white mb-2">
+          Contact Information
+        </h3>
+        <p className="text-lg text-gray-300 mb-4">
+          For inquiries or support, feel free to reach out to me.
+        </p>
+        <div className="space-y-2">
+          <p className="text-lg text-white">
+            <strong>Email:</strong>{" "}
+            <a
+              href="mailto:Emonhridoy2014@gmail.com"
+              className="text-success  hover:underline"
+            >
+              Emonhridoy2014@gmail.com
+            </a>
+          </p>
+          <p className="text-lg text-white">
+            <strong>Phone:</strong>{" "}
+            <a
+              href="tel:+8801718842739"
+              className="text-success hover:underline"
+            >
+              +8801718842739
+            </a>
+          </p>
+          <p className="text-lg text-success">
+            <strong className="text-white">Address:</strong> Section-11, Mirpur,
+            Dhaka, Bangladesh
+          </p>
+        </div>
+      </div> */}
     </section>
   );
 };

@@ -29,7 +29,7 @@ const Navbar = () => {
                     to={section}
                     smooth={true}
                     duration={500}
-                    spy={true}  // This detects active section
+                    spy={true}  
                     activeClass="text-success font-bold"
                     className="cursor-pointer"
                   >
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
         
         <div className="navbar-end">
-          <a className="btn bg-success text-white">Resume</a>
+          <a href="https://drive.google.com/file/d/1Jw_iCcYgCARs1tm-ZUNm1JVH2MR6V4Zx/view?usp=drive_link" target="blank" className="btn bg-success text-white">Resume</a>
         </div>
       </div>
     </div>

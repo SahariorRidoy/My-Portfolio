@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 const skillsData = [
   { name: 'React', icon: <FaReact />, progress: 90, color: '#61DBFB' },
   { name: 'JavaScript', icon: <FaJs />, progress: 85, color: '#F7DF1E' },
+  { name: 'Node.js', icon: <FaNodeJs />, progress: 80, color: '#68A063' },
+  { name: 'Express.js', icon: <SiExpress />, progress: 80, color: '#000000' },
+  { name: 'MongoDB', icon: <SiMongodb />, progress: 75, color: '#47A248' },
   { name: 'Tailwind CSS', icon: <SiTailwindcss />, progress: 85, color: '#38BDF8' },
   { name: 'BootStrap', icon: <FaBootstrap />, progress: 100, color: '#7D0AF8' },
   { name: 'HTML5', icon: <FaHtml5 />, progress: 100, color: '#E34F26' },
   { name: 'CSS3', icon: <FaCss3Alt />, progress: 90, color: '#2965F1' },
-  { name: 'Node.js', icon: <FaNodeJs />, progress: 80, color: '#68A063' },
-  { name: 'Express.js', icon: <SiExpress />, progress: 80, color: '#000000' },
-  { name: 'MongoDB', icon: <SiMongodb />, progress: 75, color: '#47A248' },
   { name: 'Github', icon: <FaGithub />, progress: 75, color: '#D1D7E0' },
   { name: 'NPM', icon: <FaNpm />, progress: 75, color: '#CD3E3D' },
 ];

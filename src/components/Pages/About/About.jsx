@@ -11,7 +11,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-lg leading-relaxed mt-4">
-            Hey there! I'm [Your Name], a web developer who loves building
+            Hey there! I'm Md. Saharior Ridoy, a web developer who loves building
             user-friendly and dynamic applications. My programming journey
             started with curiosity, and over time, it became my passion. From
             writing my first "Hello World" in C to crafting full-stack React

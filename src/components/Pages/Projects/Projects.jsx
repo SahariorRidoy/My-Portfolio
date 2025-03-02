@@ -79,7 +79,7 @@ const Projects = () => {
 
             {/* Right side - Project Details */}
             <div className="w-full md:w-1/2 pl-6">
-              <h3 className="text-2xl font-semibold text-green-500">{project.title}</h3>
+              <h3 className="text-2xl font-semibold text-success">{project.title}</h3>
               <p className="text-gray-400 mt-2">{project.description}</p>
               <h2 className="mt-4 font-semibold text-lg">Technology Used :</h2>
               <div className="mt-2 flex flex-wrap gap-2">
@@ -98,7 +98,7 @@ const Projects = () => {
                 {project.feature.map((f, i) => (
                   <span
                     key={i}
-                    className="bg-green-500 text-white text-xs px-3 py-1 rounded-full"
+                    className="bg-success text-white text-xs px-3 py-1 rounded-full"
                   >
                     {f}
                   </span>
@@ -111,7 +111,7 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border px-3 py-1 rounded-md text-green-500 flex items-center gap-2 hover:text-blue-300"
+                  className="border px-3 py-1 rounded-md text-success flex items-center gap-2 hover:text-blue-300"
                 >
                   Live Demo <FaExternalLinkAlt />
                 </a>
